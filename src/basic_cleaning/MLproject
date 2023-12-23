@@ -6,27 +6,27 @@ entry_points:
     parameters:
 
       input_artifact:
-        description: ## ADD DESCRIPTION
+        description: input data name in wandb
         type: string
 
       output_artifact:
-        description: ## ADD DESCRIPTION
+        description: output data name in wandb
         type: string
 
       output_type:
-        description: ## ADD DESCRIPTION
+        description: type of output data
         type: string
 
       output_description:
-        description: ## ADD DESCRIPTION
+        description: data cleaning is applied to the input data
         type: string
 
       min_price:
-        description: ## ADD DESCRIPTION
+        description: min price of apartments
         type: string
 
       max_price:
-        description: ## ADD DESCRIPTION
+        description: max price of apartments
         type: string
 
 
