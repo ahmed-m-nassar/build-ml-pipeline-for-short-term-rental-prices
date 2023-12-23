@@ -19,10 +19,8 @@ def go(args):
 
     # Download input artifact. This will also log that this script is using this
     # particular version of the artifact
-    artifact = run.use_artifact(args.input_artifact)
-    artifact_local_path = artifact.download()
-    print(artifact_local_path)
-    df = pd.read_csv(os.path.join(artifact_local_path , "sample1.csv"))
+    artifact_local_path = run.use_artifact(args.input_artifact).file()
+    df = pd.read_csv(artifact_local_path)
     
     # Drop outliers
     min_price = args.min_price
